@@ -1,6 +1,8 @@
 # CSCI4239/5239 Spring 2023
 ## Final Project: Marching Cubes for Terrain Generation
 ### By Noah James
+
+![Marching cubes terrain generation example](images/terrain_demo.png)
 ---
 
 This program can be run by using `make` with the given `makefile` and then running the resulting `final.exe`. The keybinds for various operations within the program are shown down below.
