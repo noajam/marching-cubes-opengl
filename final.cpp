@@ -899,7 +899,7 @@ void reshape(GLFWwindow *window, int width, int height)
 int main(int argc, char *argv[])
 {
    //  Initialize GLFW
-   GLFWwindow *window = InitWindow("Noah James", 1, 1600, 1200, &reshape, &key);
+   GLFWwindow *window = InitWindow("Marching Cubes", 1, 1600, 1200, &reshape, &key);
 
    // Configuration and callbacks
    glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
