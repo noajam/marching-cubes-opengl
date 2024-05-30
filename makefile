@@ -38,9 +38,10 @@ fps.o: fps.c CSCIx239.h
 shader.o: shader.c CSCIx239.h
 noise.o: noise.c CSCIx239.h
 initwin.o: initwin.c CSCIx239.h
+sphere.o: sphere.c CSCIx239.h
 
 #  Create archive
-CSCIx239.a:fatal.o errcheck.o print.o axes.o loadtexbmp.o projection.o lighting.o elapsed.o fps.o shader.o noise.o initwin.o
+CSCIx239.a:fatal.o errcheck.o print.o axes.o loadtexbmp.o projection.o lighting.o elapsed.o fps.o shader.o noise.o initwin.o sphere.o
 	ar -rcs $@ $^
 
 # Compile rules
