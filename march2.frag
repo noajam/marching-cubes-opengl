@@ -1,15 +1,14 @@
-#version 330 core
+#version 400 core
 
-// No textures at the moment, but can do a cube map later
+// Basic texturing
 
-in vec4 FrontColor;
-in vec4 position;
+in vec2 texCoord;
+in vec4 color;
 out vec4 FragColor;
 
-uniform float gridSpace;
-uniform float isovalue;
+uniform sampler2D Tex;
 
 void main()
 {
-    FragColor = vec4(smoothstep(-gridSpace/2, gridSpace/2, position.y), 0, 0, 1);
+    FragColor = color*texture(Tex, texCoord);
 }
